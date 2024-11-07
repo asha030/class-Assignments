@@ -1,0 +1,70 @@
+Program for Aggregation and Composition 
+package lab;
+class Brain{
+	private String colour;
+	private float weight;
+	
+	public Brain(String colour, float weight) {
+		
+		this.colour = colour;
+		this.weight = weight;
+	}
+
+	public String getColour() {
+		return colour;
+	}
+
+	public float getWeight() {
+		return weight;
+	}
+	
+}
+class Book {
+	String Name;
+	String Author;
+	
+	public Book(String name, String author) {
+		
+		Name = name;
+		Author = author;
+	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public String getAuthor() {
+		return Author;
+	}
+}
+class Student{
+	Brain br = new Brain("pinkish grey" , 1.5f);
+	void hasA(Book b)
+	{
+		System.out.println(b.getName());
+		System.out.println(b.getAuthor());
+	}
+}
+
+
+public class AssignmentQuestion {
+
+	public static void main(String[] args) {
+		Book b = new Book("Power", "jack");
+		Student s = new Student();
+		System.out.println(s.br.getColour());
+		System.out.println(s.br.getWeight());
+		s.hasA(b);
+		
+
+	}
+
+}
+outpu
+
+pinkish grey
+1.5
+Power
+jack
+
+
